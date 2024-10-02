@@ -25,7 +25,7 @@ Change the content of index.html file with adding you name to a message like "Th
 
 #### Definition of Done:
 
-Configfiguration applied with no errors. You can reach Nginx server via public IP address and receive custom page with text "This is Terraform task by {Your name}".
+Configuration applied with no errors. You can reach Nginx server via public IP address and receive custom page with text "Greatings from {Your name}".
 
 That it.
 
