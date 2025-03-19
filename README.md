@@ -43,7 +43,7 @@ Key Steps:
 ## Definition of Done:
 
 - The Terraform configuration applies without errors.
-- No terraform resources deleted(but they might be changed).
+- No resources deleted from Terraform configuration(but they might be changed).
 - The Nginx server is accessible via its public IP.
 - The custom page displays the correct message, including your name.
 
