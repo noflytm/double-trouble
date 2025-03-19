@@ -22,7 +22,7 @@ Your task is to identify and fix these issues, ensuring that Terraform correctly
 ### Rules & Constraints:
 
 - Fix errors in the provided Terraform configuration to ensure a successful deployment.
-- Do not remove existing resources, but you may modify or enhance them if necessary.
+- Do not remove existing resources, but you may modify or add them if necessary.
 - Add new resources only if required for a proper deployment.
 - All changes must be committed to a fork repository.
 
@@ -43,6 +43,7 @@ Key Steps:
 ## Definition of Done:
 
 - The Terraform configuration applies without errors.
+- No terraform resources deleted(but they might be changed).
 - The Nginx server is accessible via its public IP.
 - The custom page displays the correct message, including your name.
 
