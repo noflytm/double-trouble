@@ -20,7 +20,7 @@ resource "aws_instance" "this_instance" {
 resource "aws_ebs_volume" "this_ebs_volume" {
   availability_zone = "us-east-1d"
   size              = 10
-  type              = "gp2"
+  type              = "gp3"
 }
 
 resource "aws_volume_attachment" "this_ebs_attach" {
@@ -49,7 +49,7 @@ resource "null_resource" "remote_exec" {
   provisioner "remote-exec" {
     inline = [
       "cd /tmp",
-      "sudo amazon-linux-extras install nginx1 -y",
+      "sudo amazon-linux-extras install nginx -y",
       "sudo systemctl enable nginx",
       "sudo systemctl start nginx",
       "rm -rf /tmp/awscliv2.zip /tmp/aws && curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip",
