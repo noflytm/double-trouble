@@ -14,5 +14,5 @@ variable "availability_zones" {
 }
 
 variable "student_name" {
-  default = "John_Doe"
+  default = "Anton_Antanovich"
 }
